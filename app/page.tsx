@@ -13,6 +13,13 @@ export default function Home() {
           height={38}
           priority
         />
+        <p>This is a demo application for NextJS.</p>
+        <ol>
+          <li>
+            Get started by editing <code>app/page.tsx</code>.
+          </li>
+          <li>Save and see your changes instantly.</li>
+        </ol>
 
         <div className={styles.ctas}>
           <a
