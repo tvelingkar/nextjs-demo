@@ -153,6 +153,20 @@ VERCEL_PROJECT_ID: Your Vercel project ID.
 
 Once you've set up the workflow file and added your secrets, you can try out the workflow. All you need to do is to create a new pull request to your GitHub repository. GitHub Actions will identify the update and develop your application using the Vercel CLI. T hus it will make a Preview Deployment. A Production build will also be created and deployed once the pull request is merged. A Preview Deployment will be included in every pull request by default. Finally,  Vercel will initiate a fresh Production build to return to the previous git state if the pull request needs to be rolled back. To do this, simply revert and merge the PR.
 
+### Containerization
+
+* Build your container
+
+```
+docker build -t nextjs-docker .
+```
+
+* Run your container
+
+```
+docker run -p 3000:3000 nextjs-docker
+```
+
 ### Local Development
 
 First, run the development server:
